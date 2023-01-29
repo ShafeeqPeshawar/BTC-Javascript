@@ -1,0 +1,39 @@
+git --version
+git status
+git init
+
+git config --global user.name "Shafeeq"
+git config --global user.name #to chech the name
+git config --global user.name "tree" # to change the name
+
+git config --global user.email "shafeeq.peshawar@gmail.com"
+
+
+working directory
+staging area
+repositry  # local repo
+
+git add # to put the files in staging area
+git add first.py
+git add *.html
+
+git commit # to move files from staging  area to local repository
+git commit -m "first commit"
+
+
+git remote add origin https://github.com/ShafeeqPeshawar/BTC-Javascript.git
+git remote
+git remote -v
+
+
+git remote add [name] [URL]: Add a remote
+git remote remove [name]: Remove a remote
+
+
+Communicating with the remote
+There are four commands within Git that prompt communication with the remote. Unless you are using one of these four commands, all of your work is only happening locally.
+
+git push #The git push command is used to upload local repository content to a remote repository.
+git clone
+git pull
+git fetch
