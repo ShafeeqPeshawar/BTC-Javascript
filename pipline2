@@ -3,14 +3,14 @@ pipeline{
     agent any
         stages{
             
-            stage("Fiels from GIT"){
+            stage("GIT"){
                 steps{
                     git "https://github.com/QAC-KHAN/java3.git"
                 }
             }
-            stage("Files Done"){
+            stage("Maven"){
                 steps{
-                    echo "Files Downloaded"
+                    bat "mvn clean package"
                 }
             }
               stage("Message"){
