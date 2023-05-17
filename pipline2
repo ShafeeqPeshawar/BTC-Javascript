@@ -8,12 +8,16 @@ pipeline{
                     git "https://github.com/QAC-KHAN/java3.git"
                 }
             }
-            stage("File Done"){
+            stage("Files Done"){
                 steps{
-                    echo "Files Donloaded"
+                    echo "Files Downloaded"
                 }
             }
-
+              stage("Message"){
+                steps{
+                    echo "3rd Step ending"
+                }
+            }
         }
 }
     
