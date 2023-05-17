@@ -1,0 +1,19 @@
+
+pipeline{
+    agent any
+        stages{
+            
+            stage("Fiels from GIT"){
+                steps{
+                    git "https://github.com/QAC-KHAN/java3.git"
+                }
+            }
+            stage("File Done"){
+                steps{
+                    echo "Files Donloaded"
+                }
+            }
+
+        }
+}
+    
